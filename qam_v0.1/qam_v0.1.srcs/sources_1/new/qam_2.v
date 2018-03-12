@@ -36,8 +36,8 @@ always @ (posedge clk) begin
     end
     else if (ready == 1'b1) begin
         case (signal_in) 
-            0 : signal_out = 32'b00000000000000000000000000000001; // 1 + 0j
-            1 : signal_out = 32'b00000000000000000000111111111111; // -1 + 0j
+            0 : signal_out <= 32'b00000000000000000000000000000001; // 1 + 0j
+            1 : signal_out <= 32'b00000000000000000000111111111111; // -1 + 0j
         endcase 
         valid <= 1'b1;
     end
