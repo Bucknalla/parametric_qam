@@ -22,22 +22,24 @@
 
 module qam_2(
     input clk,
-    input rst,
+    input rst, // Active High
     input ready,
     input signal_in,
     output reg [31:0] signal_out,
-    output valid
+    output reg valid
     );
 
 always @ (posedge clk) begin
-    if (rst) begin
+    if (!rst) begin
         signal_out <= 1'b0;
+        valid <= 1'b0;
     end
     else if (ready == 1'b1) begin
         case (signal_in) 
-            0 : signal_out = 32'b0000000000000001; // 1 + 0j
-            1 : signal_out = 32'b0000000011111111; // -1 + 0j
+            0 : signal_out = 32'b00000000000000000000000000000001; // 1 + 0j
+            1 : signal_out = 32'b00000000000000000000111111111111; // -1 + 0j
         endcase 
+        valid <= 1'b1;
     end
 end
     

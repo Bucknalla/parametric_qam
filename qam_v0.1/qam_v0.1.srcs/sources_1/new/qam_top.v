@@ -28,9 +28,15 @@ module qam_top(
     input [2:0] qam
 );
     
+reg ready = 0;
+reg signal_in_mod;
     
 qam_2 qam2 (
-    
+    .clk (clk),
+    .rst (rst),
+    .ready (ready),
+    .signal_in (signal_in_mod),
+    .signal_out (signal_out)
 );
     
 qam_4 qam4 (
