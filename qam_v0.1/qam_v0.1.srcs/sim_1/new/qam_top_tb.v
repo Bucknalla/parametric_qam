@@ -21,29 +21,31 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module qam_top_tb();
+
 reg clk;
 reg rst;
-reg qam;
+reg [2:0] qam;
+reg [31:0] signal_in;
+wire [31:0] signal_out;
 
 qam_top qam_tb (
   .rst (rst),
   .clk (clk),
-  .qam (qam)
+  .qam (qam),
+  .signal_in (signal_in),
+  .signal_out (signal_out)
 );
 
 localparam CLK_PERIOD = 10;
 always #(CLK_PERIOD/2) clk = ~clk;
 
 initial begin
-    #1 rst <= 1'bx; clk <= 1'bx;
-    #(CLK_PERIOD*3) rst <= 1;
-    #(CLK_PERIOD*3) rst <= 0;
     clk <= 0;
-    repeat(5) @(posedge clk);
     rst <= 1;
-    @(posedge clk);
-    repeat(2) @(posedge clk);
-    $finish(200);
+    signal_in <= 32'b00000000000000000000111111111111;
+    qam <= 3'b100;
+    #(CLK_PERIOD*3) rst <= 0;
+    #10 $finish(1);
 end
 
 endmodule
