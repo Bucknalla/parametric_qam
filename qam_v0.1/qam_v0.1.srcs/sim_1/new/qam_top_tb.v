@@ -42,7 +42,7 @@ always #(CLK_PERIOD/2) clk = ~clk;
 initial begin
     clk <= 0;
     rst <= 1;
-    signal_in <= 32'b00000000000000000000111111111111;
+    signal_in <= 32'b00000000000000000000000000000001;
     qam <= 3'b100;
     #(CLK_PERIOD*3) rst <= 0;
     #10 $finish(1);

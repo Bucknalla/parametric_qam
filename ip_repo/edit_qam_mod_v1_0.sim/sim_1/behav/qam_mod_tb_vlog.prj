@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../qam_mod_1.0/src/qam_2.v"
+verilog xil_defaultlib  "../../../qam_mod_1.0/src/qam_top.v"
+verilog xil_defaultlib  "../../../../qam_v0.1/qam_v0.1.srcs/sources_1/new/qam_mod_tb.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
