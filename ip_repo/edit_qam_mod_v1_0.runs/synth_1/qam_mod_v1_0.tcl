@@ -18,8 +18,6 @@ set_property ip_repo_paths /home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0 
 set_property ip_output_repo /home/alex/GitHub/parametric_qam/ip_repo/edit_qam_mod_v1_0.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v
-  /home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_4.v
   /home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v
   /home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v
   /home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXI.v

@@ -67,7 +67,7 @@
 	  reg writes_done;
 	// I/O Connections assignments
 
-	assign S_AXIS_TREADY	= axis_tready;
+//	assign S_AXIS_TREADY	= axis_tready;
 	// Control state machine implementation
 	always @(posedge S_AXIS_ACLK) 
 	begin  

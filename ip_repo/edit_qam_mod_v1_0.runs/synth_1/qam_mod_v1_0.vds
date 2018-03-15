@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Mar 14 13:53:17 2018
-# Process ID: 15438
+# Start of session at: Thu Mar 15 13:03:31 2018
+# Process ID: 21767
 # Current directory: /home/alex/GitHub/parametric_qam/ip_repo/edit_qam_mod_v1_0.runs/synth_1
 # Command line: vivado -log qam_mod_v1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source qam_mod_v1_0.tcl
 # Log file: /home/alex/GitHub/parametric_qam/ip_repo/edit_qam_mod_v1_0.runs/synth_1/qam_mod_v1_0.vds
@@ -15,11 +15,11 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15447 
+INFO: Helper process launched with PID 21771 
 WARNING: [Synth 8-2507] parameter declaration becomes local in qam_mod_v1_0_S00_AXIS with formal parameter declaration list [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXIS.v:53]
 WARNING: [Synth 8-2507] parameter declaration becomes local in qam_mod_v1_0_M00_AXIS with formal parameter declaration list [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:64]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1124.773 ; gain = 194.305 ; free physical = 4198 ; free virtual = 24610
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1110.770 ; gain = 180.305 ; free physical = 5410 ; free virtual = 12885
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'qam_mod_v1_0' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0.v:4]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -38,23 +38,18 @@ WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic 
 INFO: [Synth 8-638] synthesizing module 'qam_top' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:22]
 INFO: [Synth 8-638] synthesizing module 'qam_2' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:23]
 INFO: [Synth 8-256] done synthesizing module 'qam_2' (1#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:23]
-INFO: [Synth 8-638] synthesizing module 'qam_4' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_4.v:23]
-INFO: [Synth 8-256] done synthesizing module 'qam_4' (2#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_4.v:23]
-INFO: [Synth 8-638] synthesizing module 'qam_16' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:23]
-INFO: [Synth 8-256] done synthesizing module 'qam_16' (3#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'signal_in' does not match port width (3) of module 'qam_16' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:97]
-WARNING: [Synth 8-3848] Net error in module/entity qam_top does not have driver. [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:31]
-INFO: [Synth 8-256] done synthesizing module 'qam_top' (4#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:22]
-WARNING: [Synth 8-350] instance 'qam' of module 'qam_top' requires 9 connections, but only 1 given [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXI.v:394]
-INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0_S00_AXI' (5#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXI.v:4]
+WARNING: [Synth 8-689] width (2) of port connection 'signal_in' does not match port width (1) of module 'qam_2' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:90]
+INFO: [Synth 8-256] done synthesizing module 'qam_top' (2#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:22]
+WARNING: [Synth 8-350] instance 'qam' of module 'qam_top' requires 8 connections, but only 1 given [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXI.v:394]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0_S00_AXI' (3#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXI.v:4]
 INFO: [Synth 8-638] synthesizing module 'qam_mod_v1_0_S00_AXIS' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXIS.v:4]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter NUMBER_OF_INPUT_WORDS bound to: 8 - type: integer 
 	Parameter bit_num bound to: 3 - type: integer 
 	Parameter IDLE bound to: 2'b00 
 	Parameter WRITE_FIFO bound to: 2'b01 
-WARNING: [Synth 8-350] instance 'qam' of module 'qam_top' requires 9 connections, but only 4 given [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXIS.v:165]
-INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0_S00_AXIS' (6#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXIS.v:4]
+WARNING: [Synth 8-350] instance 'qam' of module 'qam_top' requires 8 connections, but only 4 given [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXIS.v:165]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0_S00_AXIS' (4#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_S00_AXIS.v:4]
 INFO: [Synth 8-638] synthesizing module 'qam_mod_v1_0_M00_AXIS' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:4]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
@@ -64,47 +59,16 @@ INFO: [Synth 8-638] synthesizing module 'qam_mod_v1_0_M00_AXIS' [/home/alex/GitH
 	Parameter IDLE bound to: 2'b00 
 	Parameter INIT_COUNTER bound to: 2'b01 
 	Parameter SEND_STREAM bound to: 2'b10 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:107]
-WARNING: [Synth 8-350] instance 'qam' of module 'qam_top' requires 9 connections, but only 2 given [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:227]
-INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0_M00_AXIS' (7#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:4]
-INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0' (8#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0.v:4]
-WARNING: [Synth 8-3331] design qam_top has unconnected port error
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[31]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[30]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[29]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[28]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[27]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[26]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[25]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[24]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[23]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[22]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[21]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[20]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[19]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[18]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[17]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[16]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[15]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[14]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[13]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[12]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[11]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[10]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[9]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[8]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[7]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[6]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[5]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[4]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[3]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[2]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[1]
-WARNING: [Synth 8-3331] design qam_top has unconnected port signal_in[0]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:106]
+WARNING: [Synth 8-350] instance 'qam' of module 'qam_top' requires 8 connections, but only 2 given [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:226]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0_M00_AXIS' (5#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:4]
+INFO: [Synth 8-256] done synthesizing module 'qam_mod_v1_0' (6#1) [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0.v:4]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXIS has unconnected port S_AXIS_TLAST
+WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXIS has unconnected port S_AXIS_TVALID
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
@@ -112,28 +76,27 @@ WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXI has unconnected port S_AXI_A
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design qam_mod_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1151.023 ; gain = 220.555 ; free physical = 4170 ; free virtual = 24582
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1137.020 ; gain = 206.555 ; free physical = 5382 ; free virtual = 12858
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1151.023 ; gain = 220.555 ; free physical = 4169 ; free virtual = 24581
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1137.020 ; gain = 206.555 ; free physical = 5382 ; free virtual = 12858
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1159.027 ; gain = 228.559 ; free physical = 4169 ; free virtual = 24581
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.023 ; gain = 214.559 ; free physical = 5382 ; free virtual = 12858
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-5546] ROM "ready" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "bit_shift" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "select_qam_16" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "select_qam_4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "select_qam_2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "mst_exec_state" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "count" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "tx_done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1167.035 ; gain = 236.566 ; free physical = 4161 ; free virtual = 24574
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1161.039 ; gain = 230.574 ; free physical = 5367 ; free virtual = 12842
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -147,27 +110,27 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
 	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 11    
-	               12 Bit    Registers := 6     
-	                5 Bit    Registers := 1     
+	               32 Bit    Registers := 8     
+	               12 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 3     
-	                3 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 24    
+	                1 Bit    Registers := 22    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 13    
+	   2 Input     32 Bit        Muxes := 7     
 	   4 Input     32 Bit        Muxes := 5     
-	   2 Input     12 Bit        Muxes := 6     
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 3     
 	   4 Input      3 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 1     
 	   5 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 20    
-	   4 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 21    
+	   4 Input      1 Bit        Muxes := 4     
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -179,31 +142,27 @@ Hierarchical RTL Component report
 Module qam_2 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   2 Input     12 Bit        Muxes := 2     
-Module qam_4 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-Module qam_16 
-Detailed RTL Component Info : 
-+---Registers : 
-	               12 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module qam_top 
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 4     
-	   4 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
 Module qam_mod_v1_0_S00_AXI 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -215,19 +174,10 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 4     
 	   4 Input     32 Bit        Muxes := 5     
 	   2 Input      1 Bit        Muxes := 4     
-Module qam_mod_v1_0_S00_AXIS 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      3 Bit       Adders := 1     
-+---Registers : 
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 2     
 Module qam_mod_v1_0_M00_AXIS 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
 	                5 Bit    Registers := 1     
@@ -322,316 +272,128 @@ WARNING: [Synth 8-3331] design qam_mod_v1_0 has unconnected port s00_axis_tstrb[
 WARNING: [Synth 8-3331] design qam_mod_v1_0 has unconnected port s00_axis_tstrb[2]
 WARNING: [Synth 8-3331] design qam_mod_v1_0 has unconnected port s00_axis_tstrb[1]
 WARNING: [Synth 8-3331] design qam_mod_v1_0 has unconnected port s00_axis_tstrb[0]
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/ready_reg )
+WARNING: [Synth 8-3331] design qam_mod_v1_0 has unconnected port s00_axis_tlast
+WARNING: [Synth 8-3331] design qam_mod_v1_0 has unconnected port s00_axis_tvalid
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/bit_shift_reg[2]' (FDRE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/bit_shift_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/bit_shift_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/bit_shift_reg[0] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_S00_AXIS_inst/qam/bit_shift_reg[2]' (FDRE) to 'qam_mod_v1_0_S00_AXIS_inst/qam/bit_shift_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_S00_AXIS_inst/qam/bit_shift_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_S00_AXIS_inst/qam/bit_shift_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_S00_AXIS_inst/qam/select_qam_2_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/select_qam_2_reg )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[1]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[2]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[3]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[4]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[5]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[6]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[7]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[8]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[9]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[10]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]'
 INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'qam_mod_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
 INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'qam_mod_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[31]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[31] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[31]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[31] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[31] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[30]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[30] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[30]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[30] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[30] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[29]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[29] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[29]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[29] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[29] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[28]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[28] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[28]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[28] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[28] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[27]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[27] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[27]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[27] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[27] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[26]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[26] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[26]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[26] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[26] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[25]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[25] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[25]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[25] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[25] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[24]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[24] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[24]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[24] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[24] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[23]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[23] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[23]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[23] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[23] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[22]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[22] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[22]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[22] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[22] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[21]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[21] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[21]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[21] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[21] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[20]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[20] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[20]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[20] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[20] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[19]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[19] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[19]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[19] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[19] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[18]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[18] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[18]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[18] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[18] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[17]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[17] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[17]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[17] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[17] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[16]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[16] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[16]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[16] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[16] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[15]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[15] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[15]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[15] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[15] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[14]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[14] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[14]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[14] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[14] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[13]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[13] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[13]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[13] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[13] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[12]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[12] with 1st driver pin 'qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[12]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[12] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[12] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[11]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[10]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[9]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[8]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[7]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[6]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[5]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[4]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[3]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[2]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[1]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/signal_out_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/qam2/ready_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_S00_AXIS_inst/qam/qam2/ready_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[0] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[31]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[30]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[30] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[30]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[29] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[29]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[28]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[28] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[28]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[27] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[27]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[26] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[26]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[25] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[25]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[24]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[24] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[24]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[23]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[23] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[23]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[22]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[22] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[22]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[21] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[21]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[20] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[20]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[19] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[19]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[18] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[18]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[17] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[17]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[16] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[16]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[15] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[15]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[14] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[14]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[13] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[13]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[12] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[12]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[11] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[11]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[10] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[10]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[9] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[9]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[8] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[8]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[7] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[7]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[6] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[6]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[5] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[5]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[4] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[4]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[3] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[3]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[2] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[2]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[1] )
+INFO: [Synth 8-3886] merging instance 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[1]' (FDE) to 'qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11] )
 WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam2/ready_reg) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[11]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[10]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[9]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[8]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[7]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[6]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[5]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[4]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[3]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[2]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[1]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/signal_out_reg[0]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam4/ready_reg) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[11]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[10]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[9]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[8]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[7]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[6]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[5]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[4]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[3]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[2]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[1]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/signal_out_reg[0]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/qam16/ready_reg) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_16_reg) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_16_reg__0) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/ready_reg) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_2_reg) is unused and will be removed from module qam_mod_v1_0.
 WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_shift_reg[2]) is unused and will be removed from module qam_mod_v1_0.
 WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_shift_reg[1]) is unused and will be removed from module qam_mod_v1_0.
 WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_shift_reg[0]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_shift_reg[2]__0) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_shift_reg[1]__0) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_shift_reg[0]__0) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_4_reg) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_4_reg__0) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_2_reg) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/select_qam_2_reg__0) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[31]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[31] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[31]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[31] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[31] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[30]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[30] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[30]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[30] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[30] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[29]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[29] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[29]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[29] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[29] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[28]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[28] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[28]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[28] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[28] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[27]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[27] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[27]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[27] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[27] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[26]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[26] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[26]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[26] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[26] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[25]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[25] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[25]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[25] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[25] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[24]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[24] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[24]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[24] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[24] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[23]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[23] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[23]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[23] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[23] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[22]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[22] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[22]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[22] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[22] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[21]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[21] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[21]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[21] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[21] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[20]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[20] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[20]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[20] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[20] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[19]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[19] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[19]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[19] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[19] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[18]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[18] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[18]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[18] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[18] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[17]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[17] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[17]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[17] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[17] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[16]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[16] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[16]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[16] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[16] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[15]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[15] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[15]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[15] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[15] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[14]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[14] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[14]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[14] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[14] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[13]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[13] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[13]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[13] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[13] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[12]) is unused and will be removed from module qam_mod_v1_0.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[12] with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[12]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[12] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[12] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[11]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[10]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[9]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[8]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[7]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[6]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[5]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[4]) is unused and will be removed from module qam_mod_v1_0.
-WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/signal_out_reg[3]) is unused and will be removed from module qam_mod_v1_0.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/qam16/ready_reg/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:35]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:35]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:35]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/ready_reg/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:50]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:50]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:50]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/select_qam_16_reg/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/select_qam_4_reg/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'qam_mod_v1_0_S00_AXIS_inst/qam/select_qam_2_reg/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[31] with 1st driver pin 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_reg[31]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[31] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[31] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[30] with 1st driver pin 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_reg[30]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[30] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[30] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[29] with 1st driver pin 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_reg[29]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[29] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[29] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[28] with 1st driver pin 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_reg[28]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[28] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[28] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[27] with 1st driver pin 'qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_reg[27]/Q' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal_out[27] with 2nd driver pin 'GND' [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[27] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[26] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[25] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[24] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[23] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[22] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[21] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[20] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[19] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[18] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[17] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[16] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[15] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[14] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[13] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal_out[12] is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_2.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_4.v:35]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_8.v:34]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:51]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/src/qam_top.v:52]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/alex/GitHub/parametric_qam/ip_repo/qam_mod_1.0/hdl/qam_mod_v1_0_M00_AXIS.v:92]
-INFO: [Common 17-14] Message 'Synth 8-5559' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_counter_reg[4]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_counter_reg[3]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_counter_reg[2]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_counter_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/qam/bit_counter_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/qam2/ready_reg) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/select_qam_2_reg) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/bit_shift_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_S00_AXIS_inst/qam/bit_shift_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/qam2/ready_reg) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/ready_reg) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/select_qam_2_reg) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_shift_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_shift_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/signal_in_mod_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[11]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/qam2/signal_out_mod_reg[0]) is unused and will be removed from module qam_mod_v1_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4048 ; free virtual = 24463
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1272.391 ; gain = 341.926 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -644,7 +406,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4048 ; free virtual = 24463
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1272.391 ; gain = 341.926 ; free physical = 5258 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -655,8 +417,14 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_counter_reg[0]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_counter_reg[4]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_counter_reg[3]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_counter_reg[2]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/bit_counter_reg[1]) is unused and will be removed from module qam_mod_v1_0.
+WARNING: [Synth 8-3332] Sequential element (qam_mod_v1_0_M00_AXIS_inst/qam/valid_reg) is unused and will be removed from module qam_mod_v1_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4040 ; free virtual = 24455
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -680,7 +448,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -693,7 +461,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -705,25 +473,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -739,15 +507,15 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |BUFG |     2|
-|2     |LUT1 |     4|
-|3     |LUT2 |     3|
-|4     |LUT3 |     6|
-|5     |LUT4 |    22|
-|6     |LUT5 |     4|
-|7     |LUT6 |    36|
-|8     |FDRE |   182|
-|9     |IBUF |    50|
+|1     |BUFG |     3|
+|2     |LUT1 |     5|
+|3     |LUT2 |     5|
+|4     |LUT3 |     7|
+|5     |LUT4 |    23|
+|6     |LUT5 |     6|
+|7     |LUT6 |    37|
+|8     |FDRE |   188|
+|9     |IBUF |    52|
 |10    |OBUF |    80|
 +------+-----+------+
 
@@ -755,18 +523,20 @@ Report Instance Areas:
 +------+-----------------------------+----------------------+------+
 |      |Instance                     |Module                |Cells |
 +------+-----------------------------+----------------------+------+
-|1     |top                          |                      |   389|
+|1     |top                          |                      |   406|
 |2     |  qam_mod_v1_0_M00_AXIS_inst |qam_mod_v1_0_M00_AXIS |    32|
-|3     |  qam_mod_v1_0_S00_AXI_inst  |qam_mod_v1_0_S00_AXI  |   225|
+|3     |  qam_mod_v1_0_S00_AXIS_inst |qam_mod_v1_0_S00_AXIS |    14|
+|4     |    qam                      |qam_top               |    14|
+|5     |  qam_mod_v1_0_S00_AXI_inst  |qam_mod_v1_0_S00_AXI  |   225|
 +------+-----------------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.387 ; gain = 354.918 ; free physical = 4033 ; free virtual = 24448
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.398 ; gain = 342.934 ; free physical = 5257 ; free virtual = 12734
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 312 critical warnings and 474 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1285.387 ; gain = 241.832 ; free physical = 4033 ; free virtual = 24448
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.395 ; gain = 354.926 ; free physical = 4033 ; free virtual = 24448
+Synthesis finished with 0 errors, 0 critical warnings and 122 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1273.398 ; gain = 242.848 ; free physical = 5256 ; free virtual = 12733
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1273.406 ; gain = 342.941 ; free physical = 5256 ; free virtual = 12733
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -774,9 +544,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-51 Infos, 217 Warnings, 200 Critical Warnings and 0 Errors encountered.
+125 Infos, 122 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1416.203 ; gain = 388.230 ; free physical = 3965 ; free virtual = 24377
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1439.270 ; gain = 425.301 ; free physical = 5185 ; free virtual = 12662
 INFO: [Common 17-1381] The checkpoint '/home/alex/GitHub/parametric_qam/ip_repo/edit_qam_mod_v1_0.runs/synth_1/qam_mod_v1_0.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1440.215 ; gain = 0.000 ; free physical = 3964 ; free virtual = 24377
-INFO: [Common 17-206] Exiting Vivado at Wed Mar 14 13:53:32 2018...
+report_utilization: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1463.281 ; gain = 0.000 ; free physical = 5185 ; free virtual = 12661
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 15 13:03:48 2018...

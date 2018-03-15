@@ -36,14 +36,14 @@ reg select_qam_2, select_qam_4, select_qam_16 = 1'b0;
 reg [2:0] bit_shift = 1;
 reg [4:0] bit_counter = 0;
 
-always @ (posedge ready) begin
-    case (qam)
-        0 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b100001; 
-        1 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b010010; 
-        2 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b001100; 
-        default : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b100001; 
-    endcase
-end
+//always @ (posedge ready) begin
+//    case (qam)
+//        0 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b100001; 
+//        1 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b010010; 
+//        2 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b001100; 
+//        default : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b100001; 
+//    endcase
+//end
 
 always @ (posedge clk) begin
     if (rst) begin
@@ -70,6 +70,14 @@ always @ (posedge clk) begin
         end
         else begin
             valid <= 0;
+        end
+        if (ready) begin
+        case (qam)
+            0 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b100001; 
+            1 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b010010; 
+            2 : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b001100; 
+            default : {select_qam_2,select_qam_4,select_qam_16, bit_shift} <= 6'b100001; 
+        endcase
         end
     end
 end
