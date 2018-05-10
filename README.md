@@ -1,2 +1,2 @@
 # parametric_qam
-Parametrically Controlled Qaudarature Modulation Encoder
+Parametrically Controlled Quadarature Modulation Encoder
